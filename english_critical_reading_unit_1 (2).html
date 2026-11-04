@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อ30222 การอ่านภาษาอังกฤษเชิงวิจารณ์ ม.4 | Unit 1: Reading Foundations & Strategies</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastelPink: '#FFD1DC',
+                        pastelBlue: '#E0F2FE',
+                        softBlue: '#3B82F6',
+                        deepNavy: '#1E3A8A',
+                        pastelLightPink: '#FFF0F5',
+                        accentBlue: '#0284C7',
+                        lightNavy: '#1E293B'
+                    },
+                    fontFamily: {
+                        sans: ['Kanit', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Kanit & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background: linear-gradient(135deg, #F0F9FF 0%, #FFF0F5 50%, #E0F2FE 100%);
+            min-height: 100vh;
+        }
+        .article-text {
+            font-family: 'Inter', 'Kanit', sans-serif;
+            font-size: 1.25rem; /* 20px - ตัวหนังสือใหญ่ อ่านง่าย */
+            line-height: 1.85;
+        }
+        /* Highlight styles for target vocabulary */
+        .vocab-highlight {
+            background-color: #FEF08A;
+            color: #854D0E;
+            font-weight: 700;
+            padding: 2px 6px;
+            border-radius: 6px;
+            border-bottom: 2px solid #FACC15;
+            display: inline-block;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            .print-only { display: block !important; }
+            body { background: white !important; font-size: 12pt; color: black; }
+            .shadow-xl, .shadow-md, .shadow-lg { box-shadow: none !important; }
+            .border-pastelPink, .border-pastelBlue { border-color: #CBD5E1 !important; }
+            .bg-pastelBlue, .bg-pastelPink, .bg-gradient-to-r { background: none !important; }
+            .text-deepNavy, .text-softBlue { color: black !important; }
+            .page-break { page-break-before: always; }
+            .vocab-highlight { background: none !important; border-bottom: 1px underline #000 !important; color: black !important; }
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased selection:bg-pastelPink selection:text-deepNavy pb-16">
+
+    <!-- Header & Banner Section -->
+    <header class="bg-gradient-to-r from-deepNavy via-softBlue to-accentBlue text-white shadow-xl no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <div class="inline-block bg-white/20 backdrop-blur-md px-4 py-1 rounded-full text-sm font-semibold tracking-wide text-pastelPink mb-2">
+                        รายวิชาการอ่านภาษาอังกฤษเชิงวิจารณ์ (อ30222) ชั้นมัธยมศึกษาปีที่ 4
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight drop-shadow-md">
+                        Unit 1: Reading Foundations & Strategies
+                    </h1>
+                    <p class="text-blue-100 text-lg mt-2 font-light">
+                        เรียนรู้กลยุทธ์การอ่านภาษาอังกฤษเชิงวิเคราะห์ผ่านบทความวัฒนธรรมรอบโลก
+                    </p>
+                </div>
+                <!-- Teacher Info Card -->
+                <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 text-right text-sm sm:text-base flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-pastelPink text-deepNavy flex items-center justify-center font-bold text-xl shadow-inner">
+                        <i class="fa-solid font-bold fa-chalkboard-user"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-xs text-blue-200 uppercase tracking-wider">ครูผู้สอน</p>
+                        <p class="font-bold text-white text-lg">ครูภิญญาพัชญ์ คบด่านกลาง</p>
+                        <p class="text-xs text-blue-100">โรงเรียนเตรียมอุดมศึกษาน้อมเกล้านครราชสีมา</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Student Info Bar & Control Bar -->
+    <div class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-blue-100 shadow-sm no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
+                
+                <!-- Student Identification Form -->
+                <div class="flex flex-wrap items-center gap-3 w-full lg:w-auto justify-center sm:justify-start">
+                    <span class="text-deepNavy font-bold text-sm flex items-center gap-1.5 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-100">
+                        <i class="fa-solid fa-id-card text-softBlue"></i> ข้อมูลนักเรียน:
+                    </span>
+                    <input type="text" id="studentName" placeholder="ชื่อ-นามสกุล..." 
+                           class="px-3 py-1.5 text-sm border-2 border-blue-100 rounded-lg focus:outline-none focus:border-softBlue w-48 sm:w-60 bg-white transition-all">
+                    
+                    <input type="text" id="studentNo" placeholder="เลขที่" 
+                           class="px-3 py-1.5 text-sm border-2 border-blue-100 rounded-lg focus:outline-none focus:border-softBlue w-20 bg-white text-center transition-all">
+                    
+                    <select id="studentClass" class="px-3 py-1.5 text-sm border-2 border-blue-100 rounded-lg focus:outline-none focus:border-softBlue bg-white font-medium text-deepNavy transition-all">
+                        <option value="">-- เลือกชั้น --</option>
+                        <option value="ม.4/1">ม.4/1</option>
+                        <option value="ม.4/2">ม.4/2</option>
+                        <option value="ม.4/3">ม.4/3</option>
+                        <option value="ม.4/4">ม.4/4</option>
+                        <option value="ม.4/5">ม.4/5</option>
+                    </select>
+                </div>
+
+                <!-- Action Controls (Teacher Login & Print) -->
+                <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
+                    <button onclick="openUnlockModal('thai')" id="unlockThaiBtn" 
+                            class="px-3.5 py-2 bg-pink-100 text-pink-700 hover:bg-pink-200 border border-pink-300 text-xs sm:text-sm font-semibold rounded-xl shadow-sm transition-all flex items-center gap-1.5">
+                        <i class="fa-solid fa-language text-pink-600"></i> <span id="unlockThaiBtnText">ปลดล็อกคำแปลไทย</span>
+                    </button>
+                    <button onclick="openUnlockModal('teacher')" id="teacherBtn" 
+                            class="px-3.5 py-2 bg-gradient-to-r from-deepNavy to-softBlue text-white text-xs sm:text-sm font-semibold rounded-xl shadow-md hover:opacity-90 transition-all flex items-center gap-1.5">
+                        <i class="fa-solid fa-user-lock"></i> <span id="teacherBtnText">โหมดครู (เฉลย)</span>
+                    </button>
+                    <button onclick="window.print()" 
+                            class="px-3.5 py-2 bg-white text-deepNavy border-2 border-deepNavy/20 text-xs sm:text-sm font-semibold rounded-xl hover:bg-blue-50 transition-all flex items-center gap-1.5">
+                        <i class="fa-solid fa-print text-softBlue"></i> พิมพ์เอกสาร
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Learning Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- Navigation Tabs for 3 Articles -->
+        <div class="flex flex-wrap justify-center gap-3 mb-8 no-print">
+            <button onclick="switchArticle(1)" id="tab-1" 
+                    class="article-tab active flex items-center gap-3 px-6 py-3.5 rounded-2xl font-bold text-lg transition-all shadow-md bg-white text-deepNavy border-2 border-softBlue">
+                <span class="w-8 h-8 rounded-full bg-pastelPink text-deepNavy flex items-center justify-center text-sm font-black">1</span>
+                <span>Songkran (Thailand)</span>
+            </button>
+            <button onclick="switchArticle(2)" id="tab-2" 
+                    class="article-tab flex items-center gap-3 px-6 py-3.5 rounded-2xl font-bold text-lg transition-all shadow-sm bg-white/70 text-gray-600 border-2 border-transparent hover:bg-white">
+                <span class="w-8 h-8 rounded-full bg-blue-100 text-deepNavy flex items-center justify-center text-sm font-black">2</span>
+                <span>Tea Ceremony (Japan)</span>
+            </button>
+            <button onclick="switchArticle(3)" id="tab-3" 
+                    class="article-tab flex items-center gap-3 px-6 py-3.5 rounded-2xl font-bold text-lg transition-all shadow-sm bg-white/70 text-gray-600 border-2 border-transparent hover:bg-white">
+                <span class="w-8 h-8 rounded-full bg-pink-100 text-deepNavy flex items-center justify-center text-sm font-black">3</span>
+                <span>Día de los Muertos (Mexico)</span>
+            </button>
+        </div>
+
+        <!-- Dynamic Content Container -->
+        <div id="articles-wrapper">
+            <!-- ARTICLE 1: Songkran -->
+            <div id="article-1-container" class="article-content space-y-8">
+                <!-- Content injected dynamically via JS -->
+            </div>
+
+            <!-- ARTICLE 2: Japanese Tea Ceremony -->
+            <div id="article-2-container" class="article-content space-y-8 hidden">
+                <!-- Content injected dynamically via JS -->
+            </div>
+
+            <!-- ARTICLE 3: Día de los Muertos -->
+            <div id="article-3-container" class="article-content space-y-8 hidden">
+                <!-- Content injected dynamically via JS -->
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Passcode Auth Modal for Unlock Operations -->
+    <div id="teacherModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl border-4 border-pastelBlue transform transition-all">
+            <div class="text-center mb-6">
+                <div class="w-16 h-16 bg-blue-100 text-deepNavy rounded-full flex items-center justify-center mx-auto mb-3 text-2xl shadow-inner">
+                    <i class="fa-solid fa-key text-softBlue"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-deepNavy" id="modalTitle">กรอกรหัสผ่านครูผู้สอน</h3>
+                <p class="text-sm text-gray-500 mt-1" id="modalSubtitle">กรุณากรอกรหัสผ่านเพื่อปลดล็อก</p>
+            </div>
+            
+            <form onsubmit="handlePasscodeSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Passcode (รหัสผ่านครู)</label>
+                    <input type="password" id="passcodeKey" placeholder="กรอกรหัสผ่าน..." required
+                           class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-softBlue focus:outline-none text-center text-2xl tracking-widest font-mono">
+                </div>
+                <div id="loginError" class="text-red-500 text-xs font-semibold text-center hidden">
+                    <i class="fa-solid fa-triangle-exclamation"></i> รหัสผ่านไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง
+                </div>
+                <div class="flex gap-3 pt-2">
+                    <button type="button" onclick="closeUnlockModal()" 
+                            class="w-1/2 py-3 bg-gray-100 text-gray-700 rounded-xl font-bold hover:bg-gray-200 transition-all">
+                        ยกเลิก
+                    </button>
+                    <button type="submit" 
+                            class="w-1/2 py-3 bg-gradient-to-r from-deepNavy to-softBlue text-white rounded-xl font-bold hover:opacity-90 shadow-lg transition-all">
+                        ยืนยันรหัสผ่าน
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Student Test Result Export Modal -->
+    <div id="resultModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl border-4 border-pastelPink" id="resultCardToCapture">
+            <div class="text-center mb-6">
+                <div class="inline-block p-3 bg-green-100 text-green-600 rounded-full mb-2">
+                    <i class="fa-solid fa-circle-check text-4xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-deepNavy">สรุปผลการทดสอบการอ่าน</h3>
+                <p class="text-xs text-gray-400 mt-1">รายวิชาการอ่านภาษาอังกฤษเชิงวิจารณ์ (อ30222)</p>
+            </div>
+
+            <!-- Card Content for Screenshot -->
+            <div class="bg-gradient-to-br from-blue-50 to-pink-50 p-6 rounded-2xl border border-blue-100 space-y-4 mb-6">
+                <div class="grid grid-cols-2 gap-4 text-sm border-b border-gray-200 pb-4">
+                    <div>
+                        <p class="text-xs text-gray-500">ชื่อ-นามสกุล:</p>
+                        <p class="font-bold text-deepNavy text-base" id="resStudentName">-</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500">ระดับชั้น / เลขที่:</p>
+                        <p class="font-bold text-deepNavy text-base"><span id="resStudentClass">-</span> / เลขที่ <span id="resStudentNo">-</span></p>
+                    </div>
+                </div>
+
+                <div class="text-center py-2">
+                    <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider">บทความที่ทดสอบ</p>
+                    <p class="text-lg font-bold text-accentBlue" id="resArticleTitle">Songkran Festival</p>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm border border-blue-100">
+                    <p class="text-sm text-gray-500 font-semibold mb-1">คะแนนที่ได้ (Score)</p>
+                    <div class="text-4xl font-extrabold text-deepNavy">
+                        <span id="resScore" class="text-softBlue">0</span> / <span id="resMaxScore">20</span>
+                    </div>
+                    <p class="text-xs font-bold mt-2" id="resFeedback">ยอดเยี่ยมมาก!</p>
+                </div>
+
+                <div class="text-xs text-gray-400 text-end">
+                    ส่งครูผู้สอน: ครูภิญญาพัชญ์ คบด่านกลาง
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button onclick="closeResultModal()" 
+                        class="w-full sm:w-1/2 py-3 bg-gray-200 text-gray-700 rounded-xl font-bold hover:bg-gray-300 transition-all">
+                    ปิดหน้านี้
+                </button>
+                <button onclick="window.print()" 
+                        class="w-full sm:w-1/2 py-3 bg-gradient-to-r from-deepNavy to-softBlue text-white rounded-xl font-bold hover:opacity-90 shadow-md transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-camera"></i> แคปหน้าจอนี้ส่งครู
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Data & Logic -->
+    <script>
+        // Global App State
+        let isTeacherMode = false;
+        let isThaiUnlocked = false;
+        let unlockTargetMode = ''; // 'thai' or 'teacher'
+        let currentArticleIndex = 1;
+        const TEACHER_PASSCODE = "198020";
+
+        // Curriculum Data Source
+        const articlesData = [
+            {
+                id: 1,
+                title: "Songkran: The Splashing Soul of Thai Culture",
+                subtitle: "การอ่านเชิงวิจารณ์วัฒนธรรมไทย: ประเพณีสงกรานต์",
+                culturalSymbols: [
+                    { icon: "fa-glass-water", bg: "bg-blue-500", label: "Water Cleansing", desc: "การสาดน้ำชำระล้างจิตวิญญาณ" },
+                    { icon: "fa-hands-holding-child", bg: "bg-pink-500", label: "Filial Piety", desc: "ความกตัญญูกตเวทีต่อผู้ใหญ่" },
+                    { icon: "fa-mountain-sun", bg: "bg-amber-500", label: "Sand Pagodas", desc: "เจดีย์ทรายทำบุญในวัด" },
+                    { icon: "fa-pray", bg: "bg-emerald-500", label: "Sacred Rituals", desc: "สรงน้ำพระ & รดน้ำดำหัว" }
+                ],
+                preReadingQuestion: "What comes to your mind when you think of Songkran? Is it just a water fight or something deeper?",
+                paragraphs: [
+                    {
+                        rawText: "Songkran, the traditional Thai New Year celebrated annually in mid-April, is globally renowned for its vibrant public water fights. However, beyond the energetic festivities lies a profound cultural foundation rooted in spiritual cleansing and filial piety. Historically, water was gently poured over the hands of elders and sacred Buddha statues to symbolize the wash-away of previous bad luck and the welcoming of renewal. Consequently, what appears to casual tourists as a mere giant water festival is actually a sacred ritual of gratitude and family reunions.",
+                        htmlEn: "Songkran, the traditional Thai New Year celebrated annually in mid-April, is globally renowned for its vibrant public water fights. However, beyond the energetic festivities lies a profound cultural foundation rooted in spiritual cleansing and <span class=\"vocab-highlight\">filial piety</span>. Historically, water was gently poured over the hands of elders and sacred Buddha statues to symbolize the wash-away of previous bad luck and the welcoming of renewal. Consequently, what appears to casual tourists as a mere giant water festival is actually a sacred ritual of gratitude and family reunions.",
+                        th: "สงกรานต์ เทศกาลปีใหม่ไทยแบบดั้งเดิมซึ่งเฉลิมฉลองกันเป็นประจำทุกปีในช่วงกลางเดือนเมษายน มีชื่อเสียงโด่งดังไปทั่วโลกจากการเล่นสาดน้ำสาธารณะที่คึกคัก อย่างไรก็ตาม ภายใต้การเฉลิมฉลองอันเปี่ยมด้วยพลังนี้ มีรากฐานทางวัฒนธรรมอันลึกซึ้งที่หยั่งรากอยู่ในการชำระล้างทางจิตวิญญาณและความกตัญญูกตเวที ในอดีต น้ำจะถูกรดลงบนมือของผู้สูงอายุและพระพุทธรูปศักดิ์สิทธิ์เบาๆ เพื่อเป็นสัญลักษณ์ของการล้างความโชคร้ายในอดีตออกไปและต้อนรับการเริ่มต้นใหม่ ดังนั้น สิ่งที่นักท่องเที่ยวทั่วไปเห็นเป็นเพียงเทศกาลน้ำขนาดใหญ่ จริงๆ แล้วคือพิธีกรรมอันศักดิ์สิทธิ์แห่งความซาบซึ้งและการรวมตัวกันของครอบครัว"
+                    },
+                    {
+                        rawText: "Furthermore, the timing of Songkran aligns perfectly with the culmination of Thailand's dry season, right before the monsoon rain begins. Farmers take this opportunity to rest from grueling agricultural labor and participate in community merit-making at local temples. Building sand pagodas, giving alms to monks, and releasing captive birds or fish are essential components of this period. Therefore, Songkran acts as a crucial social catalyst that strengthens community cohesion and reinforces shared moral values across generations.",
+                        htmlEn: "Furthermore, the timing of Songkran aligns perfectly with the <span class=\"vocab-highlight\">culmination</span> of Thailand's dry season, right before the monsoon rain begins. Farmers take this opportunity to rest from grueling agricultural labor and participate in community merit-making at local temples. Building sand pagodas, giving alms to monks, and releasing captive birds or fish are essential components of this period. Therefore, Songkran acts as a crucial social <span class=\"vocab-highlight\">catalyst</span> that strengthens community cohesion and reinforces shared moral values across generations.",
+                        th: "นอกจากนี้ ช่วงเวลาของสงกรานต์ยังสอดคล้องอย่างสมบูรณ์แบบกับจุดสิ้นสุดของฤดูแล้งในประเทศไทย ก่อนที่ฝนมรสุมจะเริ่มต้นขึ้น เกษตรกรถือโอกาสนี้พักผ่อนจากการทำงานเกษตรกรรมที่เหน็ดเหนื่อย และเข้าร่วมการทำบุญในชุมชนที่วัดในท้องถิ่น การก่อเจดีย์ทราย การตักบาตรถวายสังฆทานแก่พระสงฆ์ และการปล่อยนกปล่อยปลาเป็นองค์ประกอบสำคัญของช่วงเวลานี้ ดังนั้น สงกรานต์จึงทำหน้าที่เป็นตัวเร่งปฏิกิริยาทางสังคมที่สำคัญซึ่งเสริมสร้างความสามัคคีในชุมชนและตอกย้ำคุณค่าทางศีลธรรมร่วมกันระหว่างคนรุ่นต่างๆ"
+                    },
+                    {
+                        rawText: "In recent years, modern commercialization has drastically transformed Songkran into a massive driver of international tourism. While this economic boom boosts local businesses, cultural preservationists express genuine concern over the dilution of traditional customs. Striking a harmonious balance between preserving sacred heritage and embracing global entertainment remains Thailand's main challenge. Ultimately, understanding Songkran requires recognizing both its joyous water play and its enduring spiritual heartbeat.",
+                        htmlEn: "In recent years, modern <span class=\"vocab-highlight\">commercialization</span> has drastically transformed Songkran into a massive driver of international tourism. While this economic boom boosts local businesses, cultural <span class=\"vocab-highlight\">preservationists</span> express genuine concern over the <span class=\"vocab-highlight\">dilution</span> of traditional customs. Striking a harmonious balance between preserving sacred heritage and embracing global entertainment remains Thailand's main challenge. Ultimately, understanding Songkran requires recognizing both its joyous water play and its enduring spiritual heartbeat.",
+                        th: "ในช่วงไม่กี่ปีที่ผ่านมา การแปรสภาพเป็นพาณิชย์สมัยใหม่ได้เปลี่ยนแปลงสงกรานต์ให้กลายเป็นกลไกสำคัญของการท่องเที่ยวระหว่างประเทศอย่างสิ้นเชิง แม้ว่าการเติบโตทางเศรษฐกิจนี้จะช่วยส่งเสริมธุรกิจในท้องถิ่น แต่นักอนุรักษ์วัฒนธรรมกลับแสดงความกังวลอย่างแท้จริงเกี่ยวกับการลดทอนคุณค่าของขนบธรรมเนียมดั้งเดิม การสร้างสมดุลที่กลมกลืนระหว่างการรักษามรดกอันศักดิ์สิทธิ์และการเปิดรับความบันเทิงระดับโลกยังคงเป็นความท้าทายหลักของประเทศไทย ในท้ายที่สุด การเข้าใจสงกรานต์ต้องอาศัยการตระหนักรู้ทั้งการเล่นน้ำอันสนุกสนานและจังหวะหัวใจทางจิตวิญญาณที่ยั่งยืน"
+                    }
+                ],
+                foundations: [
+                    {
+                        title: "1. Topic & Main Idea Identification",
+                        desc: "<b>Topic:</b> The Cultural Significance and Modern Evolution of Songkran.<br><b>Main Idea:</b> Songkran is not merely a fun water fight, but a deeply spiritual Thai traditional New Year centered around family respect, community merit-making, and cultural preservation amid modern tourism.",
+                        exampleEn: "Songkran is not merely a giant water festival, but a sacred ritual of gratitude, filial piety, and spiritual renewal."
+                    },
+                    {
+                        title: "2. Text Structure Analysis (โครงสร้างเนื้อหา)",
+                        desc: "<b>Structure Type:</b> Cause and Effect / Contrast Analysis.<br><b>Paragraph 1:</b> Contrast between tourist perception vs. actual cultural meaning.<br><b>Paragraph 2:</b> Cause and effect relationship between agricultural season cycles and community bonding.<br><b>Paragraph 3:</b> Modern dilemma between economic commercialization and traditional preservation.",
+                        exampleEn: "Historically, water was gently poured over the hands of elders; however, modern commercialization has drastically transformed Songkran into a massive driver of international tourism."
+                    },
+                    {
+                        title: "3. Signal Words & Context Clues Examples",
+                        desc: "• <b>Transition Signals:</b> <i>However</i> (shows contrast), <i>Furthermore</i> (adds info), <i>Therefore</i> (indicates result), <i>Ultimately</i> (concludes).<br>• <b>Context Clue (Restatement):</b> In P1, <i>filial piety</i> is contextualized through 'water gently poured over the hands of elders'.",
+                        exampleEn: "Therefore, Songkran acts as a crucial social catalyst that strengthens community cohesion across generations."
+                    },
+                    {
+                        title: "4. Author's Purpose & Tone (วัตถุประสงค์และเจตคติผู้เขียน)",
+                        desc: "<b>Author's Purpose:</b> To inform and critically evaluate the balance between traditional heritage and commercial tourism.<br><b>Tone:</b> Informative, reflective, and appreciative yet cautious.",
+                        exampleEn: "Striking a harmonious balance between preserving sacred heritage and embracing global entertainment remains Thailand's main challenge."
+                    }
+                ],
+                vocab: [
+                    { word: "Filial piety", ipa: "/ˈfɪl.i.əl ˈpaɪ.ə.ti/", pos: "noun", th: "ความกตัญญูกตเวทีต่อพ่อแม่ผู้ปกครอง" },
+                    { word: "Culmination", ipa: "/ˌkʌl.mɪˈneɪ.ʃən/", pos: "noun", th: "จุดสูงสุด หรือจุดสิ้นสุดของกระบวนการ" },
+                    { word: "Catalyst", ipa: "/ˈkæt.əl.ɪst/", pos: "noun", th: "ตัวเร่งปฏิกิริยา / สิ่งที่ทำให้เกิดการเปลี่ยนแปลง" },
+                    { word: "Commercialization", ipa: "/kəˌmɜː.ʃəl.aɪˈzeɪ.ʃən/", pos: "noun", th: "การแปลงเป็นเชิงพาณิชย์เพื่อผลกำไร" },
+                    { word: "Preservationists", ipa: "/ˌprez.əˈveɪ.ʃən.ɪsts/", pos: "noun", th: "นักอนุรักษ์ (สิ่งแวดล้อมหรือวัฒนธรรม)" },
+                    { word: "Dilution", ipa: "/daɪˈluː.ʃən/", pos: "noun", th: "การเจือจาง / การลดทอนคุณค่า" }
+                ],
+                quiz: [
+                    { q: "1. What is the main topic of the entire reading passage?", options: ["The economic benefits of Thailand's tourism industry", "The deeper spiritual meaning and modern changes of Songkran", "How farmers celebrate the rainy season in April", "The history of giant public water fights in Asia"], answer: 1, type: "Main Idea" },
+                    { q: "2. According to Paragraph 1, what do casual tourists often misunderstand about Songkran?", options: ["They think it lasts for an entire month", "They view it as just a big fun water festival rather than a sacred ritual", "They believe it only happens in small local villages", "They think it is a solemn and silent religious day"], answer: 1, type: "Detail / Critical Reading" },
+                    { q: "3. The word 'filial piety' in Paragraph 1 is best explained by which action?", options: ["Pouring water over elders' hands to show respect", "Selling water guns to international tourists", "Throwing ice water at passing vehicles", "Dancing in public streets during April"], answer: 0, type: "Context Clues" },
+                    { q: "4. Why does Songkran take place in mid-April according to Paragraph 2?", options: ["Because it is the peak of the monsoon rainy season", "It coincides with the culmination of the dry season before farming begins", "It is required by modern tourism agencies", "Because temperatures are coldest during this month"], answer: 1, type: "Cause and Effect" },
+                    { q: "5. In Paragraph 2, the word 'grueling' in 'grueling agricultural labor' most likely means:", options: ["Very easy and enjoyable", "Extremely tiring and demanding", "Modern and computerized", "Short and simple"], answer: 1, type: "Vocabulary in Context" },
+                    { q: "6. Which signal word in Paragraph 1 introduces a contrast between appearance and reality?", options: ["However", "Globally", "Consequently", "Annually"], answer: 0, type: "Signal Words" },
+                    { q: "7. What is the author's tone regarding modern Songkran in Paragraph 3?", options: ["Extremely angry and aggressive", "Reflective and cautious about cultural loss", "Purely indifferent and bored", "Overly excited about commercial profits"], answer: 1, type: "Author's Tone" },
+                    { q: "8. What is an example of community merit-making mentioned in Paragraph 2?", options: ["Building sand pagodas and giving alms to monks", "Buying expensive waterproof bags", "Setting off large commercial fireworks", "Hosting international beauty pageants"], answer: 0, type: "Supporting Details" },
+                    { q: "9. What does the word 'dilution' mean in the phrase 'dilution of traditional customs'?", options: ["Strengthening and growth", "Weakening or loss of original quality", "Total destruction by fire", "Duplication and copying"], answer: 1, type: "Vocabulary In Context" },
+                    { q: "10. What is Thailand's main challenge regarding Songkran today?", options: ["Stopping foreign tourists from entering the country", "Balancing sacred tradition with commercial tourism entertainment", "Preventing all water usage during dry season", "Changing the festival date to December"], answer: 1, type: "Critical Reading" },
+                    { q: "11. The signal word 'Furthermore' in Paragraph 2 is used to:", options: ["Show a contrasting idea", "Add additional supporting information", "Give a final summary", "Provide a time sequence"], answer: 1, type: "Signal Words" },
+                    { q: "12. True or False: Pouring water on Buddha statues traditionally represents washing away bad luck.", options: ["True", "False"], answer: 0, type: "True/False" },
+                    { q: "13. What role does Songkran play as a 'social catalyst'?", options: ["It isolates families from one another", "It brings people together and reinforces moral values across generations", "It reduces the income of local communities", "It creates conflict between farmers and city workers"], answer: 1, type: "Inference" },
+                    { q: "14. Which of the following is NOT mentioned as a traditional activity during Songkran?", options: ["Releasing captive birds or fish", "Giving alms to monks", "Decorating evergreen pine trees", "Pouring water over elders' hands"], answer: 2, type: "Detail" },
+                    { q: "15. The word 'renunciation' is opposite in meaning to which concept in the text?", options: ["Commercialization", "Merit-making", "Sacred ritual", "Filial piety"], answer: 0, type: "Vocabulary" },
+                    { q: "16. What is the text structure of Paragraph 3?", options: ["Problem and Solution / Dilemma", "Chronological Timeline", "Step-by-step Instructions", "Spatial Description"], answer: 0, type: "Text Structure" },
+                    { q: "17. What does the pronoun 'this' refer to in 'While this economic boom boosts...'?", options: ["The reduction of water usage", "The massive driver of international tourism and commercialization", "The traditional sand pagoda building", "The monsoon rain in Thailand"], answer: 1, type: "Reference" },
+                    { q: "18. What can be inferred about Thai farmers' schedule from Paragraph 2?", options: ["They work hardest during mid-April", "Mid-April is a break period before the planting season starts with rain", "They never go to temples during holidays", "They do not participate in Songkran"], answer: 1, type: "Inference" },
+                    { q: "19. The author's primary purpose in writing this article is to:", options: ["Sell tickets for Songkran festival in Bangkok", "Analyze both the traditional depth and modern evolution of Songkran", "Criticize all tourists who play with water guns", "Explain how to build a sand pagoda step by step"], answer: 1, type: "Author's Purpose" },
+                    { q: "20. The phrase 'spiritual heartbeat' refers to:", options: ["The physical heart rate during water fights", "The core religious and moral value of the tradition", "The loud music played during street parades", "The sound of rain during monsoon"], answer: 1, type: "Figurative Language" }
+                ]
+            },
+            {
+                id: 2,
+                title: "The Japanese Tea Ceremony: Mindfulness in a Cup",
+                subtitle: "การอ่านเชิงวิจารณ์วัฒนธรรมญี่ปุ่น: พิธีชงชาและการฝึกสติ",
+                culturalSymbols: [
+                    { icon: "fa-leaf", bg: "bg-emerald-600", label: "Matcha Tea", desc: "ผงชาเขียวมัทฉะเข้มข้น" },
+                    { icon: "fa-yin-yang", bg: "bg-purple-600", label: "Zen Philosophy", desc: "จิตวิญญาณนิกายเซน" },
+                    { icon: "fa-handshake-angle", bg: "bg-sky-600", label: "Wa, Kei, Sei, Jaku", desc: "กลมกลืน เคารพ บริสุทธิ์ สงบ" },
+                    { icon: "fa-clock-rotate-left", bg: "bg-rose-500", label: "Ichigo Ichie", desc: "หนึ่งครั้ง หนึ่งการพบกัน" }
+                ],
+                preReadingQuestion: "How can preparing and drinking a simple cup of tea become a spiritual practice of mindfulness?",
+                paragraphs: [
+                    {
+                        rawText: "The Japanese Tea Ceremony, known as 'Chanoyu' or 'Chado' (The Way of Tea), is far more than an elegant method of serving beverage. Rooted deeply in Zen Buddhism, this centuries-old ritual transforms the simple act of preparing powdered green tea (matcha) into a spiritual practice of mindfulness and aesthetic appreciation. Every precise movement—from the cleaning of utensils to the graceful whisking of the tea—is performed with deliberate intentionality. Consequently, guests are invited to detach from worldly anxieties and immerse themselves entirely in the tranquil present moment.",
+                        htmlEn: "The Japanese Tea Ceremony, known as 'Chanoyu' or 'Chado' (The Way of Tea), is far more than an elegant method of serving beverage. Rooted deeply in Zen Buddhism, this centuries-old ritual transforms the simple act of preparing powdered green tea (matcha) into a spiritual practice of mindfulness and <span class=\"vocab-highlight\">aesthetic</span> appreciation. Every precise movement—from the cleaning of utensils to the graceful whisking of the tea—is performed with deliberate <span class=\"vocab-highlight\">intentionality</span>. Consequently, guests are invited to detach from worldly anxieties and immerse themselves entirely in the tranquil present moment.",
+                        th: "พิธีชงชาของญี่ปุ่น ซึ่งรู้จักกันในชื่อ 'ชาโนะยุ' หรือ 'ชาโด' (วิถีแห่งชา) เป็นมากกว่าวิธีการเสิร์ฟเครื่องดื่มที่หรูหรา พิธีกรรมที่มีอายุนับศตวรรษนี้มีรากฐานมาจากพุทธศาสนานิกายเซน ซึ่งเปลี่ยนการเตรียมชาเขียวผง (มัทฉะ) แบบธรรมดาให้กลายเป็นการฝึกสติทางจิตวิญญาณและการซาบซึ้งในสุนทรียศาสตร์ ทุกการเคลื่อนไหวที่แม่นยำ ตั้งแต่การทำความสะอาดอุปกรณ์ ไปจนถึงการตีชาอย่างงดงาม ถูกกระทำด้วยความตั้งใจอย่างประณีต ส่งผลให้แขกได้รับการเชื้อเชิญให้ตัดขาดจากความวิตกกังวลทางโลกและดื่มด่ำกับช่วงเวลาปัจจุบันอันสงบสุขอย่างแท้จริง"
+                    },
+                    {
+                        rawText: "Central to the philosophy of Chado are four foundational principles: Harmony (Wa), Respect (Kei), Purity (Sei), and Tranquility (Jaku). Harmony represents the connection between the host, guests, and surrounding nature in the tea room. Respect demands treating both human participants and tea utensils with equal reverence regardless of social status. Purity involves cleaning both physical objects and one's heart before entering the room. Finally, Tranquility is the ultimate state of serene inner peace attained through practicing the first three principles continuously.",
+                        htmlEn: "Central to the philosophy of Chado are four foundational principles: Harmony (Wa), Respect (Kei), Purity (Sei), and Tranquility (Jaku). Harmony represents the connection between the host, guests, and surrounding nature in the tea room. Respect demands treating both human participants and tea utensils with equal <span class=\"vocab-highlight\">reverence</span> regardless of social status. Purity involves cleaning both physical objects and one's heart before entering the room. Finally, Tranquility is the ultimate state of <span class=\"vocab-highlight\">serene</span> inner peace attained through practicing the first three principles continuously.",
+                        th: "หัวใจสำคัญของปรัชญาชาโดคือหลักการพื้นฐานสี่ประการ ได้แก่ ความกลมกลืน (วา) ความเคารพ (เค) ความบริสุทธิ์ (เซ) และความสงบ (จาคุ) ความกลมกลืนเป็นตัวแทนของความเชื่อมโยงระหว่างเจ้าบ้าน แขก และธรรมชาติรอบตัวในห้องชงชา ความเคารพเรียกร้องให้ปฏิบัติต่อทั้งผู้เข้าร่วมที่เป็นมนุษย์และอุปกรณ์ชงชาด้วยความเคารพเท่าเทียมกันโดยไม่คำนึงถึงสถานะทางสังคม ความบริสุทธิ์รวมถึงการทำความสะอาดทั้งวัตถุทางกายภาพและจิตใจของตนเองก่อนเข้าห้อง และในที่สุด ความสงบคือสภาวะสูงสุดของความสงบสุขภายในจิตใจที่ได้รับจากการปฏิบัติหลักการสามประการแรกอย่างต่อเนื่อง"
+                    },
+                    {
+                        rawText: "In contrast to modern fast-paced consumer culture where convenience is prioritized, the tea ceremony highlights the concept of 'Ichigo Ichie'—a phrase translating to 'one time, one meeting'. This concept serves as a poignant reminder that every single gathering is unique and can never be duplicated. Therefore, even if the same host and guests assemble in the exact same room, that specific moment will pass forever. In our digitized world, Chado offers a timeless sanctuary of presence, patience, and profound human connection.",
+                        htmlEn: "In contrast to modern fast-paced consumer culture where convenience is prioritized, the tea ceremony highlights the concept of 'Ichigo Ichie'—a phrase translating to 'one time, one meeting'. This concept serves as a <span class=\"vocab-highlight\">poignant</span> reminder that every single gathering is unique and can never be duplicated. Therefore, even if the same host and guests assemble in the exact same room, that specific moment will pass forever. In our digitized world, Chado offers a timeless <span class=\"vocab-highlight\">sanctuary</span> of presence, patience, and profound human connection.",
+                        th: "ในทางตรงกันข้ามกับวัฒนธรรมการบริโภคสมัยใหม่ที่รวดเร็วซึ่งให้ความสำคัญกับความสะดวกสบาย พิธีชงชาเน้นย้ำถึงแนวคิดเรื่อง 'อิจิโกะ อิจิเอะ' ซึ่งเป็นวลีที่แปลว่า 'หนึ่งครั้ง หนึ่งการพบกัน' แนวคิดนี้ทำหน้าที่เป็นเครื่องเตือนใจอันจับใจว่าทุกการรวมตัวกันมีเอกลักษณ์เฉพาะตัวและไม่สามารถทำซ้ำได้ ดังนั้น แม้ว่าเจ้าบ้านและแขกคนเดิมจะมารวมตัวกันในห้องเดิมทุกประการ ช่วงเวลาเฉพาะนั้นก็จะผ่านพ้นไปตลอดกาล ในโลกที่เป็นดิจิทัลของเรา ชาโดมอบสถานที่ลี้ภัยแห่งการมีสติ ความอดทน และความเชื่อมโยงทางมนุษย์อันลึกซึ้งที่ก้าวข้ามกาลเวลา"
+                    }
+                ],
+                foundations: [
+                    {
+                        title: "1. Topic & Main Idea Identification",
+                        desc: "<b>Topic:</b> Philosophy and Principles of the Japanese Tea Ceremony (Chado).<br><b>Main Idea:</b> Chado is a Zen-inspired spiritual discipline that teaches mindfulness, four core principles (Harmony, Respect, Purity, Tranquility), and appreciation of unique fleeting moments.",
+                        exampleEn: "Chado transforms preparing green tea into a spiritual practice of mindfulness and aesthetic appreciation."
+                    },
+                    {
+                        title: "2. Text Structure Analysis (โครงสร้างเนื้อหา)",
+                        desc: "<b>Structure Type:</b> Classification & Contrast.<br><b>Paragraph 1:</b> Definition & Spiritual core rooted in Zen Buddhism.<br><b>Paragraph 2:</b> Classification of the 4 principles (Wa, Kei, Sei, Jaku).<br><b>Paragraph 3:</b> Contrast between modern fast-paced life vs. 'Ichigo Ichie' mindful presence.",
+                        exampleEn: "In contrast to modern fast-paced consumer culture where convenience is prioritized, the tea ceremony highlights the concept of Ichigo Ichie."
+                    },
+                    {
+                        title: "3. Signal Words & Context Clues Examples",
+                        desc: "• <b>Contrast Signal:</b> <i>In contrast to</i> (shows comparison with modern speed).<br>• <b>Explanatory Context Clue:</b> <i>Ichigo Ichie</i> is defined using dashes: '—a phrase translating to 'one time, one meeting''.",
+                        exampleEn: "The tea ceremony highlights Ichigo Ichie—a phrase translating to 'one time, one meeting'."
+                    },
+                    {
+                        title: "4. Author's Purpose & Tone (วัตถุประสงค์และเจตคติผู้เขียน)",
+                        desc: "<b>Author's Purpose:</b> To explain the spiritual principles of Japanese tea culture and contrast them with modern busy lifestyles.<br><b>Tone:</b> Reverent, serene, contemplative, and appreciative.",
+                        exampleEn: "In our digitized world, Chado offers a timeless sanctuary of presence, patience, and profound human connection."
+                    }
+                ],
+                vocab: [
+                    { word: "Aesthetic", ipa: "/esˈθet.ɪk/", pos: "adj", th: "เกี่ยวกับสุนทรียศาสตร์ หรือความงาม" },
+                    { word: "Intentionality", ipa: "/ɪnˌten.ʃəˈnæl.ə.ti/", pos: "noun", th: "ความตั้งใจ / ความมีเจตนาที่ชัดเจน" },
+                    { word: "Reverence", ipa: "/ˈrev.ər.əns/", pos: "noun", th: "ความเคารพนับถืออย่างลึกซึ้ง" },
+                    { word: "Serene", ipa: "/səˈriːn/", pos: "adj", th: "สงบเยือกเย็น / ปราศจากความวุ่นวาย" },
+                    { word: "Poignant", ipa: "/ˈpɔɪ.njənt/", pos: "adj", th: "ที่ซาบซึ้ง / จับใจ / ลึกซึ้ง" },
+                    { word: "Sanctuary", ipa: "/ˈsæŋk.tʃu.ər.i/", pos: "noun", th: "สถานที่ลี้ภัย / สถานที่อันสงบปลอดภัย" }
+                ],
+                quiz: [
+                    { q: "1. What is the main idea of the Japanese Tea Ceremony according to Paragraph 1?", options: ["It is a fast way to consume caffeine in the morning", "It is a spiritual practice of mindfulness rooted in Zen Buddhism", "It is an ancient cooking competition for tea masters", "It is a ceremony designed exclusively for political leaders"], answer: 1, type: "Main Idea" },
+                    { q: "2. The phrase 'Chanoyu' or 'Chado' translates to:", options: ["The Power of Green Tea", "The Way of Tea", "The History of Japan", "The Art of Cooking"], answer: 1, type: "Detail" },
+                    { q: "3. According to Paragraph 2, which principle emphasizes equal respect regardless of social status?", options: ["Wa (Harmony)", "Kei (Respect)", "Sei (Purity)", "Jaku (Tranquility)"], answer: 1, type: "Detail" },
+                    { q: "4. In Paragraph 2, how is 'Sei (Purity)' practiced?", options: ["By drinking only pure water", "By cleaning physical objects and one's heart before entering", "By wearing white clothes only", "By speaking without using any words"], answer: 1, type: "Supporting Detail" },
+                    { q: "5. What does the Japanese phrase 'Ichigo Ichie' mean in Paragraph 3?", options: ["Drink tea every day", "One time, one meeting", "Peace throughout the world", "Respect your teachers"], answer: 1, type: "Vocabulary / Context Clue" },
+                    { q: "6. Which signal phrase in Paragraph 3 introduces a comparison between tea ceremony and modern culture?", options: ["In contrast to", "Therefore", "Central to", "Rooted deeply in"], answer: 0, type: "Signal Words" },
+                    { q: "7. What can be inferred about modern society from Paragraph 3?", options: ["It values patience and slow rituals above all else", "It is often fast-paced and focused on convenience", "It has completely destroyed Japanese tea rooms", "It requires everyone to practice Zen Buddhism"], answer: 1, type: "Inference" },
+                    { q: "8. What is the ultimate state achieved through practicing Wa, Kei, and Sei?", options: ["Wealth", "Jaku (Tranquility)", "Physical strength", "Famous status"], answer: 1, type: "Detail" },
+                    { q: "9. The word 'deliberate' in Paragraph 1 ('deliberate intentionality') is closest in meaning to:", options: ["Accidental and careless", "Done on purpose with careful thought", "Extremely fast", "Noisy and energetic"], answer: 1, type: "Vocabulary in Context" },
+                    { q: "10. Why does the author call Chado a 'sanctuary' in Paragraph 3?", options: ["Because it is a dangerous fortress", "Because it provides a peaceful refuge from a busy digital world", "Because it is built on high mountains", "Because tea costs a lot of money"], answer: 1, type: "Critical Interpretation" },
+                    { q: "11. True or False: Guests in the tea ceremony are encouraged to think about their work problems during the whisking of tea.", options: ["True", "False"], answer: 1, type: "True/False" },
+                    { q: "12. What does 'matcha' refer to in the text?", options: ["Powdered green tea used in the ceremony", "The bamboo whisk used for stirring", "The sacred tatami mat floor", "The paper sliding door"], answer: 0, type: "Detail" },
+                    { q: "13. What text structure is primarily used in Paragraph 2?", options: ["Problem and Solution", "Classification and Definition of 4 Principles", "Chronological Order of Tea History", "Cause and Effect of Illness"], answer: 1, type: "Text Structure" },
+                    { q: "14. The tone of the passage can best be described as:", options: ["Sarcastic and humorous", "Serene, respectful, and appreciative", "Scientific and cold", "Aggressive and argumentative"], answer: 1, type: "Author's Tone" },
+                    { q: "15. What is the author's purpose in writing this article?", options: ["To teach readers how to open a commercial tea shop", "To explain the spiritual philosophy and mindfulness of Chado", "To prove that green tea cures physical diseases", "To compare Japanese tea with British tea"], answer: 1, type: "Author's Purpose" },
+                    { q: "16. In Paragraph 1, the word 'detach' means to:", options: ["Disconnect or separate oneself from", "Connect tightly with glue", "Buy more items", "Ignore completely"], answer: 0, type: "Vocabulary" },
+                    { q: "17. What makes a gathering unique according to the concept of 'Ichigo Ichie'?", options: ["The expensive cost of tea", "The fact that the exact moment can never happen again", "The number of photos taken during tea time", "The size of the tea house"], answer: 1, type: "Inference" },
+                    { q: "18. What pronoun does 'this' refer to in Paragraph 1: 'this centuries-old ritual...'?", options: ["The Japanese Tea Ceremony (Chanoyu/Chado)", "Modern fast food culture", "Zen Buddhism religion in general", "Green tea leaves in China"], answer: 0, type: "Reference" },
+                    { q: "19. Which element is NOT one of the 4 core principles of Chado?", options: ["Harmony (Wa)", "Competition (Kyo)", "Purity (Sei)", "Tranquility (Jaku)"], answer: 1, type: "Detail" },
+                    { q: "20. What lesson can modern readers take from the Tea Ceremony?", options: ["To eat fast and multitask more", "To practice presence, patience, and value each moment", "To stop using tea bags at home", "To travel to Japan every year"], answer: 1, type: "Critical Reading Application" }
+                ]
+            },
+            {
+                id: 3,
+                title: "Día de los Muertos: Celebrating Life Through Remembrance",
+                subtitle: "การอ่านเชิงวิจารณ์วัฒนธรรมเม็กซิโก: วันแห่งความตายและการระลึกถึง",
+                culturalSymbols: [
+                    { icon: "fa-place-of-worship", bg: "bg-orange-500", label: "Ofrenda Altars", desc: "แท่นบูชาประดับรูปผู้ล่วงลับ" },
+                    { icon: "fa-sun", bg: "bg-yellow-500", label: "Cempasúchil", desc: "ดอกดาวเรืองสีส้มนำทางวิญญาณ" },
+                    { icon: "fa-skull", bg: "bg-purple-500", label: "Calaveras & Bread", desc: "กะโหลกน้ำตาล & ขนมปัง Pan de Muerto" },
+                    { icon: "fa-heart", bg: "bg-rose-600", label: "Joyful Remembrance", desc: "เปลี่ยนความเศร้าเป็นการระลึกถึงด้วยสุข" }
+                ],
+                preReadingQuestion: "Can death be celebrated with joy and color instead of tears and fear? How do Mexican families honor their ancestors?",
+                paragraphs: [
+                    {
+                        rawText: "Día de los Muertos, or Day of the Dead, is a vibrant Mexican holiday celebrated on November 1st and 2nd that honors deceased ancestors. Unlike Western traditions such as Halloween, which often depict death with fear or gloom, Día de los Muertos views death as a natural, joyful continuation of the human cycle. Originating from ancient Indigenous Aztec rituals blended with Spanish Catholic traditions, this holiday asserts that the souls of departed loved ones briefly return to the earthly realm to celebrate with their living families. Consequently, it is not a time of mourning, but an exuberant family reunion.",
+                        htmlEn: "Día de los Muertos, or Day of the Dead, is a vibrant Mexican holiday celebrated on November 1st and 2nd that honors <span class=\"vocab-highlight\">deceased</span> ancestors. Unlike Western traditions such as Halloween, which often depict death with fear or gloom, Día de los Muertos views death as a natural, joyful continuation of the human cycle. Originating from ancient Indigenous Aztec rituals blended with Spanish Catholic traditions, this holiday asserts that the souls of departed loved ones briefly return to the earthly realm to celebrate with their living families. Consequently, it is not a time of mourning, but an <span class=\"vocab-highlight\">exuberant</span> family reunion.",
+                        th: "วันแห่งความตาย (Día de los Muertos) เป็นวันหยุดอันมีชีวิตชีวาของชาวเม็กซิกันที่เฉลิมฉลองในวันที่ 1 และ 2 พฤศจิกายนเพื่อเป็นเกียรติแก่บรรพบุรุษผู้ล่วงลับ ต่างจากประเพณีตะวันตกเช่นฮาโลวีน ซึ่งมักวาดภาพความตายด้วยความกลัวหรือความเศร้าหมอง วันแห่งความตายมองว่าความตายเป็นความต่อเนื่องตามธรรมชาติและมีความสุขของวัฏจักรมนุษย์ ด้วยจุดเริ่มต้นจากพิธีกรรมโบราณของชาวแอซเท็กดั้งเดิมผสมผสานกับประเพณีคาทอลิกของสเปน วันหยุดนี้ยืนยันว่าดวงวิญญาณของคนที่รักที่จากไปจะกลับมายังโลกมนุษย์ชั่วคราวเพื่อเฉลิมฉลองกับครอบครัวที่ยังมีชีวิตอยู่ ส่งผลให้ช่วงเวลานี้ไม่ใช่เวลาของการไว้อาลัย แต่มันคือการรวมตัวของครอบครัวอันเปี่ยมล้นไปด้วยความสุข"
+                    },
+                    {
+                        rawText: "Central to this celebration is the creation of 'ofrendas'—intricate private altars constructed in homes and cemeteries. Families meticulously decorate these altars with bright orange marigold flowers (cempasúchil), photos of the deceased, burning incense, and 'pan de muerto' (sweet bread). The fragrant marigold petals and incense smoke are believed to guide wandering spirits back home. Additionally, families place the favorite foods, drinks, and personal possessions of the departed on the altar, demonstrating that love and memory are transcending physical mortality.",
+                        htmlEn: "Central to this celebration is the creation of 'ofrendas'—intricate private altars constructed in homes and cemeteries. Families <span class=\"vocab-highlight\">meticulously</span> decorate these altars with bright orange marigold flowers (cempasúchil), photos of the deceased, burning incense, and 'pan de muerto' (sweet bread). The fragrant marigold petals and incense smoke are believed to guide wandering spirits back home. Additionally, families place the favorite foods, drinks, and personal possessions of the departed on the altar, demonstrating that love and memory are <span class=\"vocab-highlight\">transcending</span> physical <span class=\"vocab-highlight\">mortality</span>.",
+                        th: "หัวใจสำคัญของการเฉลิมฉลองนี้คือการสร้าง 'ออฟเรนดา' (ofrendas) ซึ่งเป็นแท่นบูชาส่วนตัวอันประณีตที่สร้างขึ้นในบ้านและสุสาน ครอบครัวตกแต่งแท่นบูชาเหล่านี้อย่างพิถีพิถันด้วยดอกดาวเรืองสีส้มสดใส (cempasúchil) ภาพถ่ายของผู้ล่วงลับ ธูปที่จุดไฟ และ 'ขนมปังแห่งความตาย' (pan de muerto) เชื่อกันว่ากลีบดอกดาวเรืองที่มีกลิ่นหอมและควันธูปจะช่วยนำทางดวงวิญญาณที่เร่ร่อนกลับบ้าน นอกจากนี้ ครอบครัวยังวางอาหาร เครื่องดื่ม และข้าวของเครื่องใช้ส่วนตัวที่ผู้ล่วงลับชอบไว้บนแท่นบูชา เพื่อแสดงให้เห็นว่าความรักและความทรงจำอยู่เหนือความตายทางกายภาพ"
+                    },
+                    {
+                        rawText: "In conclusion, Día de los Muertos teaches a profound philosophical lesson about mortality and heritage. By converting grief into artistic expression and joyful remembrance, Mexican culture is reframing death not as an absolute end, but as a bridge connecting generations. Ultimately, this tradition reminds us that a person only truly dies when they are forgotten by those they left behind.",
+                        htmlEn: "In conclusion, Día de los Muertos teaches a profound philosophical lesson about mortality and heritage. By converting grief into artistic expression and joyful remembrance, Mexican culture is <span class=\"vocab-highlight\">reframing</span> death not as an absolute end, but as a bridge connecting generations. Ultimately, this tradition reminds us that a person only truly dies when they are forgotten by those they left behind.",
+                        th: "โดยสรุป วันแห่งความตายสอนบทเรียนทางปรัชญาอันลึกซึ้งเกี่ยวกับการสลายไปของร่างกายและมรดกทางวัฒนธรรม การเปลี่ยนความเศร้าโศกให้เป็นความงดงามทางศิลปะและการระลึกถึงด้วยความสุข วัฒนธรรมเม็กซิกันได้ปรับมุมมองใหม่ต่อความตาย ไม่ใช่ในฐานะจุดจบอย่างสิ้นเชิง แต่เป็นสะพานเชื่อมโยงคนรุ่นต่างๆ เข้าด้วยกัน ในท้ายที่สุด ประเพณีนี้เตือนใจเราว่า บุคคลหนึ่งจะตายอย่างแท้จริงก็ต่อเมื่อพวกเขาถูกหลงลืมโดยผู้คนที่พวกเขาเหลือไว้ข้างหลัง"
+                    }
+                ],
+                foundations: [
+                    {
+                        title: "1. Topic & Main Idea Identification",
+                        desc: "<b>Topic:</b> The Cultural Meaning and Philosophy of Día de los Muertos.<br><b>Main Idea:</b> Día de los Muertos is a joyful Mexican celebration that honors deceased loved ones through decorative altars (ofrendas), viewing death as a natural continuation of life.",
+                        exampleEn: "Día de los Muertos views death as a natural, joyful continuation of the human cycle rather than a fearful end."
+                    },
+                    {
+                        title: "2. Text Structure Analysis (โครงสร้างเนื้อหา)",
+                        desc: "<b>Structure Type:</b> Compare/Contrast & Functional Explanation.<br><b>Paragraph 1:</b> Contrast between Halloween (fear/gloom) vs. Day of the Dead (joyful reunion).<br><b>Paragraph 2:</b> Descriptive explanation of 'ofrendas' and symbols (marigolds, bread, photos).<br><b>Paragraph 3:</b> Concluding philosophical synthesis on memory and mortality.",
+                        exampleEn: "Unlike Western traditions such as Halloween, which depict death with fear, Día de los Muertos is an exuberant family reunion."
+                    },
+                    {
+                        title: "3. Signal Words & Context Clues Examples",
+                        desc: "• <b>Contrast Signal:</b> <i>Unlike</i> (contrasts with Western Halloween).<br>• <b>Addition Signal:</b> <i>Additionally</i> (adds details about foods on altar).<br>• <b>Conclusion Signal:</b> <i>In conclusion</i>, <i>Ultimately</i> (summarizes key philosophy).",
+                        exampleEn: "In conclusion, by converting grief into artistic expression, Mexican culture reframes death as a bridge connecting generations."
+                    },
+                    {
+                        title: "4. Author's Purpose & Tone (วัตถุประสงค์และเจตคติผู้เขียน)",
+                        desc: "<b>Author's Purpose:</b> To educate readers on Mexican cultural perspectives regarding death and memory.<br><b>Tone:</b> Vibrant, celebratory, respectful, and philosophical.",
+                        exampleEn: "Ultimately, this tradition reminds us that a person only truly dies when they are forgotten by those they left behind."
+                    }
+                ],
+                vocab: [
+                    { word: "Deceased", ipa: "/dɪˈsiːst/", pos: "adj", th: "ซึ่งผู้ล่วงลับ / เสียชีวิตแล้ว" },
+                    { word: "Exuberant", ipa: "/ɪɡˈzjuː.bər.ənt/", pos: "adj", th: "เปี่ยมล้นไปด้วยความสุขและพลังงาน" },
+                    { word: "Meticulously", ipa: "/məˈtɪk.jə.ləs.li/", pos: "adv", th: "อย่างพิถีพิถันและละเอียดรอบคอบ" },
+                    { word: "Transcending", ipa: "/trænˈsend.ɪŋ/", pos: "verb/adj", th: "ก้าวข้าม / อยู่เหนือข้อจำกัด" },
+                    { word: "Mortality", ipa: "/mɔːˈtæl.ə.ti/", pos: "noun", th: "การต้องสูญสิ้นชีวิต / ความเป็นอนิจจัง" },
+                    { word: "Reframing", ipa: "/ˌriːˈfreɪm.ɪŋ/", pos: "verb", th: "การปรับเปลี่ยนมุมมอง หรือกรอบความคิดใหม่" }
+                ],
+                quiz: [
+                    { q: "1. What is the central topic of Día de los Muertos as described in Paragraph 1?", options: ["A scary festival meant to frighten evil spirits away", "A joyful holiday honoring deceased ancestors and family reunion", "A national sports holiday in Mexico City", "A cooking festival for sugar skulls only"], answer: 1, type: "Main Idea" },
+                    { q: "2. How does Día de los Muertos differ from Western Halloween according to Paragraph 1?", options: ["Halloween is joyful while Day of the Dead is very depressing", "Halloween often depicts death with fear/gloom, whereas Day of the Dead views it as a joyful continuation of life", "Day of the Dead happens in summer while Halloween is in winter", "There is no difference between the two holidays"], answer: 1, type: "Contrast / Critical Reading" },
+                    { q: "3. Which two cultures blended to create Día de los Muertos?", options: ["Japanese Zen and British traditions", "Ancient Indigenous Aztec rituals and Spanish Catholic traditions", "Thai Buddhist traditions and American culture", "Egyptian pharaoh traditions and French culture"], answer: 1, type: "Detail" },
+                    { q: "4. What is an 'ofrenda' mentioned in Paragraph 2?", options: ["A type of Mexican dance step", "A private altar decorated to honor deceased family members", "A costumed parade in the streets", "A special musical instrument"], answer: 1, type: "Definition / Context Clue" },
+                    { q: "5. Why are marigold flowers (cempasúchil) placed on the altars?", options: ["Their bright color and scent are believed to guide spirits back home", "To keep insects away from the bread", "Because they are the only flowers that grow in Mexico", "To sell them for high profits to tourists"], answer: 0, type: "Cause and Effect" },
+                    { q: "6. The word 'meticulously' in Paragraph 2 means:", options: ["Carelessly and quickly", "Very carefully and with great attention to detail", "Loudly and aggressively", "Cheaply and poorly"], answer: 1, type: "Vocabulary" },
+                    { q: "7. Which signal word in Paragraph 1 signals a contrast between Halloween and Day of the Dead?", options: ["Unlike", "Consequently", "Originating", "Briefly"], answer: 0, type: "Signal Words" },
+                    { q: "8. What item is NOT mentioned as being placed on the ofrenda in Paragraph 2?", options: ["Photos of the deceased", "Marigold flowers", "Modern electronic smartphones", "Pan de muerto (sweet bread)"], answer: 2, type: "Detail" },
+                    { q: "9. According to Paragraph 3, when does a person truly die?", options: ["The moment their heart stops beating physically", "When they turn 100 years old", "When they are forgotten by those left behind", "When the altars are taken down"], answer: 2, type: "Critical Inference" },
+                    { q: "10. What is the tone of Paragraph 3 regarding death?", options: ["Frightened and hopeless", "Philosophical, hopeful, and deeply respectful", "Bored and unconcerned", "Sarcastic and humorous"], answer: 1, type: "Author's Tone" },
+                    { q: "11. The signal word 'In conclusion' in Paragraph 3 indicates:", options: ["A contrast with another idea", "The summary of main points", "An example of food", "A time sequence step"], answer: 1, type: "Signal Words" },
+                    { q: "12. What is 'pan de muerto' as explained in Paragraph 2?", options: ["A spicy chili soup", "Sweet bread prepared for the holiday", "A candle made from honey", "A golden necklace"], answer: 1, type: "Detail" },
+                    { q: "13. What does the word 'transcend' mean in 'love and memory transcend physical mortality'?", options: ["To fall below", "To go beyond or rise above physical limits", "To destroy completely", "To forget easily"], answer: 1, type: "Vocabulary" },
+                    { q: "14. True or False: Día de los Muertos is considered a time of tragic mourning and crying in Mexican culture.", options: ["True", "False"], answer: 1, type: "True/False" },
+                    { q: "15. What function do burning incense and candles serve on the altar?", options: ["To cook the pan de muerto", "To create smoke that guides spirits alongside marigold petals", "To scare tourists away", "To warm up the cold room"], answer: 1, type: "Supporting Detail" },
+                    { q: "16. In Paragraph 3, death is reframed as a:", options: ["Wall that isolates people forever", "Bridge connecting generations", "Punishment for bad behavior", "Financial expense"], answer: 1, type: "Figurative Language" },
+                    { q: "17. What does the pronoun 'this' refer to in Paragraph 2: 'Central to this celebration...'?", options: ["Día de los Muertos (Day of the Dead)", "Western Halloween", "Spanish Catholic Church", "Modern Aztec culture"], answer: 0, type: "Reference" },
+                    { q: "18. What is the author's primary purpose in writing Article 3?", options: ["To encourage people to celebrate Halloween instead", "To explain the rich cultural meaning, symbols, and philosophy of Day of the Dead", "To teach readers how to bake sweet bread at home", "To criticize Mexican ancient traditions"], answer: 1, type: "Author's Purpose" },
+                    { q: "19. The word 'exuberant' in Paragraph 1 is best replaced by:", options: ["Full of energy and happiness", "Sad and depressing", "Quiet and silent", "Dangerous and violent"], answer: 0, type: "Vocabulary in Context" },
+                    { q: "20. What critical reading lesson can students learn from comparing these cultural readings?", options: ["All cultures view traditions in the exact same way", "Different cultures have unique, profound ways of understanding life, respect, and remembrance", "Reading English is only about memorizing grammar rules", "Culture never changes over time"], answer: 1, type: "Synthesis / Critical Reading" }
+                ]
+            }
+        ];
+
+        // Speech Synthesis Engine (TTS)
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel(); // stop previous audio
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'en-US';
+                utterance.rate = 0.9; // clear, deliberate reading speed for students
+                utterance.pitch = 1.0;
+                window.speechSynthesis.speak(utterance);
+            } else {
+                alert("ขออภัย เบราว์เซอร์ของคุณไม่รองรับการออกเสียงสะกดคำ (Text-to-Speech)");
+            }
+        }
+
+        function speakArticle(articleId) {
+            const article = articlesData.find(a => a.id === articleId);
+            if (!article) return;
+            const fullText = article.paragraphs.map(p => p.rawText).join(" ");
+            speakText(fullText);
+        }
+
+        function switchArticle(articleId) {
+            currentArticleIndex = articleId;
+            document.querySelectorAll('.article-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.article-tab').forEach(el => {
+                el.classList.remove('active', 'bg-white', 'text-deepNavy', 'border-softBlue');
+                el.classList.add('bg-white/70', 'text-gray-600', 'border-transparent');
+            });
+
+            document.getElementById(`article-${articleId}-container`).classList.remove('hidden');
+            const activeTab = document.getElementById(`tab-${articleId}`);
+            activeTab.classList.add('active', 'bg-white', 'text-deepNavy', 'border-softBlue');
+            activeTab.classList.remove('bg-white/70', 'text-gray-600', 'border-transparent');
+        }
+
+        // Render Articles Dynamically
+        function renderArticles() {
+            articlesData.forEach(art => {
+                const container = document.getElementById(`article-${art.id}-container`);
+                
+                let html = `
+                    <!-- Pre-Reading Phase Card -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-pastelBlue transition-all">
+                        <div class="flex flex-col lg:flex-row gap-8 items-stretch">
+                            
+                            <!-- Visual Context Box -->
+                            <div class="w-full lg:w-1/2 bg-gradient-to-br from-deepNavy via-softBlue to-accentBlue text-white p-6 sm:p-8 rounded-2xl flex flex-col justify-between shadow-lg relative overflow-hidden">
+                                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+                                <div>
+                                    <div class="flex items-center justify-between mb-4">
+                                        <span class="bg-pastelPink text-deepNavy text-xs font-black px-3 py-1.5 rounded-full uppercase tracking-wider">
+                                            <i class="fa-solid fa-compass"></i> Pre-Reading Context Strategy
+                                        </span>
+                                        <span class="text-xs text-blue-100 font-mono">Culture #0${art.id}</span>
+                                    </div>
+                                    <h4 class="text-xs font-bold text-blue-200 uppercase tracking-widest mb-1">Key Cultural Concept Elements</h4>
+                                    <p class="text-lg font-bold text-white mb-6">สัญลักษณ์สำคัญทางวัฒนธรรมสำหรับเดาเนื้อเรื่อง</p>
+
+                                    <!-- Cultural Symbol Grid -->
+                                    <div class="grid grid-cols-2 gap-3">
+                                        ${art.culturalSymbols.map(sym => `
+                                            <div class="bg-white/15 backdrop-blur-md p-3.5 rounded-xl border border-white/25 flex items-center gap-3 hover:bg-white/25 transition-all">
+                                                <div class="w-10 h-10 rounded-xl ${sym.bg} text-white flex items-center justify-center text-lg shrink-0 shadow-md">
+                                                    <i class="fa-solid ${sym.icon}"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="font-bold text-white text-xs sm:text-sm leading-tight">${sym.label}</p>
+                                                    <p class="text-[11px] text-blue-100 font-light mt-0.5">${sym.desc}</p>
+                                                </div>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+
+                                <div class="mt-6 pt-4 border-t border-white/20">
+                                    <p class="text-xs text-blue-200 font-semibold uppercase tracking-wider mb-1">Predicting Prompt (คำถามท้าทายความคิด):</p>
+                                    <p class="text-sm font-medium italic text-pastelPink bg-black/20 p-3 rounded-xl border border-white/10">
+                                        "${art.preReadingQuestion}"
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Article Overview & Full Audio Button -->
+                            <div class="w-full lg:w-1/2 space-y-4 flex flex-col justify-between">
+                                <div>
+                                    <div class="inline-block bg-pastelPink text-deepNavy text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">
+                                        Unit 1 Reading Article 0${art.id}
+                                    </div>
+                                    <h2 class="text-2xl sm:text-3xl font-extrabold text-deepNavy leading-tight">${art.title}</h2>
+                                    <p class="text-sm font-medium text-gray-600 bg-blue-50 p-3 rounded-xl border border-blue-100 mt-2">${art.subtitle}</p>
+
+                                    <!-- Pre-reading Instructions -->
+                                    <div class="mt-4 bg-gradient-to-r from-blue-50 to-pink-50 p-4 rounded-xl border border-blue-100 text-xs sm:text-sm text-gray-700 space-y-2">
+                                        <p class="font-bold text-deepNavy flex items-center gap-1.5">
+                                            <i class="fa-solid fa-lightbulb text-amber-500"></i> คำแนะนำในการเรียนรู้เชิงวิจารณ์:
+                                        </p>
+                                        <p>• คำศัพท์ยากได้รับการ <span class="vocab-highlight">เน้นแถบสีเหลือง</span> ในบทความเพื่อให้สังเกตได้ง่าย</p>
+                                        <p>• สามารถกดฟังเสียงอ่านของแต่ละย่อหน้าหรือทั้งเรื่องได้ตลอดเวลา</p>
+                                        <p>• คำแปลภาษาไทยซ่อนอยู่ใต้แต่ละย่อหน้า ต้องให้ครูปลดล็อกด้วยรหัสผ่าน <b>198020</b></p>
+                                    </div>
+                                </div>
+
+                                <div class="pt-2">
+                                    <button onclick="speakArticle(${art.id})" 
+                                            class="w-full px-5 py-3.5 bg-gradient-to-r from-deepNavy via-softBlue to-accentBlue text-white font-extrabold text-base rounded-2xl shadow-lg hover:opacity-95 transition-all flex items-center justify-center gap-3 transform hover:scale-[1.01]">
+                                        <i class="fa-solid fa-circle-play text-pastelPink text-xl"></i>
+                                        <span>กดฟังเสียงอ่านบทความนี้ทั้งหมด (Full Article Audio)</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reading Text Section (3 Paragraphs with Individual Audio & Clean Highlighted Vocab) -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border-2 border-pastelPink space-y-8">
+                        <div class="flex items-center justify-between border-b border-gray-100 pb-4">
+                            <h3 class="text-xl sm:text-2xl font-bold text-deepNavy flex items-center gap-3">
+                                <i class="fa-solid fa-book-open text-softBlue"></i> เนื้อหาบทความ (Article Content - 3 Paragraphs)
+                            </h3>
+                            <span class="text-xs text-gray-400 font-normal no-print">* คำศัพท์ยากถูกเน้นด้วยไฮไลท์สีเหลือง</span>
+                        </div>
+
+                        <div class="space-y-6">
+                            ${art.paragraphs.map((p, idx) => `
+                                <div class="p-6 rounded-2xl bg-gradient-to-br from-white to-blue-50/40 border border-blue-100 hover:shadow-md transition-all space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-xs font-bold text-white bg-softBlue px-3 py-1 rounded-md">Paragraph ${idx + 1}</span>
+                                        
+                                        <!-- Paragraph Audio Button -->
+                                        <button onclick="speakText(\`${p.rawText.replace(/'/g, "\\'")}\`)" 
+                                                class="text-xs font-bold text-deepNavy hover:text-white hover:bg-softBlue bg-blue-50 px-3 py-1.5 rounded-xl border border-blue-200 transition-all flex items-center gap-2 shadow-sm">
+                                            <i class="fa-solid fa-volume-high text-softBlue"></i> ฟังเสียงย่อหน้านี้
+                                        </button>
+                                    </div>
+                                    <p class="article-text text-gray-800 font-normal tracking-wide">${p.htmlEn}</p>
+
+                                    <!-- Thai Translation Box (Individually unlocked by teacher code 198020) -->
+                                    <div class="mt-4 pt-3 border-t border-dashed border-gray-200">
+                                        ${isThaiUnlocked ? `
+                                            <div class="p-4 rounded-xl bg-pink-50 border border-pastelPink text-sm text-gray-700 leading-relaxed transition-all">
+                                                <p class="font-bold text-deepNavy text-xs mb-1 flex items-center gap-1">
+                                                    <i class="fa-solid fa-language text-pink-500"></i> คำแปลภาษาไทย (ย่อหน้าที่ ${idx + 1}):
+                                                </p>
+                                                <p>${p.th}</p>
+                                            </div>
+                                        ` : `
+                                            <div class="p-3 bg-gray-50 rounded-xl border border-gray-200 flex items-center justify-between text-xs text-gray-500">
+                                                <span class="flex items-center gap-1.5 font-medium"><i class="fa-solid fa-lock text-gray-400"></i> คำแปลภาษาไทยถูกซ่อนไว้ (ครูต้องปลดล็อกด้วยรหัสผ่าน)</span>
+                                                <button onclick="openUnlockModal('thai')" class="text-xs font-bold text-pink-600 hover:underline">ปลดล็อก</button>
+                                            </div>
+                                        `}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Strategic Text Breakdown with Audio Example Sentences -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-pastelBlue space-y-6">
+                        <div class="border-b border-gray-100 pb-3">
+                            <h3 class="text-xl sm:text-2xl font-bold text-deepNavy flex items-center gap-3">
+                                <i class="fa-solid fa-magnifying-glass-chart text-accentBlue"></i> 
+                                การวิเคราะห์โครงสร้างบทอ่านตามหน่วยการเรียนรู้ที่ 1 (Strategic Breakdown)
+                            </h3>
+                            <p class="text-xs text-gray-500 mt-1">วิเคราะห์ประโยค หัวข้อ ความเชื่อมโยง พร้อมประโยคตัวอย่างที่กดฟังเสียงได้</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            ${art.foundations.map(f => `
+                                <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-softBlue transition-all flex flex-col justify-between">
+                                    <div>
+                                        <h4 class="font-bold text-deepNavy text-base mb-2 border-b border-slate-200 pb-2">${f.title}</h4>
+                                        <div class="text-sm text-gray-700 space-y-2 leading-relaxed mb-4">${f.desc}</div>
+                                    </div>
+
+                                    <!-- Example Sentence with Audio Button -->
+                                    <div class="bg-white p-3.5 rounded-xl border border-blue-100 shadow-sm space-y-2">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-[11px] font-bold text-softBlue uppercase tracking-wider">Example Sentence (ประโยคตัวอย่าง):</span>
+                                            <button onclick="speakText(\`${f.exampleEn.replace(/'/g, "\\'")}\`)" 
+                                                    class="px-2.5 py-1 bg-blue-50 text-deepNavy hover:bg-softBlue hover:text-white rounded-lg text-xs font-bold transition-all flex items-center gap-1 border border-blue-100">
+                                                <i class="fa-solid fa-volume-high text-softBlue"></i> ฟังเสียงประโยคนี้
+                                            </button>
+                                        </div>
+                                        <p class="text-xs sm:text-sm font-medium text-gray-800 italic">"${f.exampleEn}"</p>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Target Vocabulary List with Pronunciation & Audio -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-pastelPink space-y-6">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2 border-b border-gray-100 pb-3">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-deepNavy flex items-center gap-3">
+                                    <i class="fa-solid fa-spell-check text-pink-500"></i> 
+                                    คำศัพท์สำคัญประจำบทเรียน (Target Vocabulary)
+                                </h3>
+                                <p class="text-xs text-gray-500 mt-1">ฝึกอ่าน ออกเสียง และสังเกตหน้าที่ของคำ (Part of Speech)</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            ${art.vocab.map(v => `
+                                <div class="p-4 rounded-2xl bg-gradient-to-br from-blue-50/50 to-pink-50/50 border border-blue-100 flex flex-col justify-between hover:shadow-md transition-all">
+                                    <div>
+                                        <div class="flex justify-between items-start">
+                                            <h4 class="font-bold text-deepNavy text-lg">${v.word}</h4>
+                                            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-white text-gray-600 border border-gray-200">${v.pos}</span>
+                                        </div>
+                                        <p class="text-xs text-softBlue font-mono mt-0.5">${v.ipa}</p>
+                                        <p class="text-sm text-gray-700 font-medium mt-2">${v.th}</p>
+                                    </div>
+                                    <button onclick="speakText('${v.word}')" 
+                                            class="mt-3 w-full py-1.5 bg-white text-deepNavy hover:bg-softBlue hover:text-white rounded-lg border border-gray-200 text-xs font-bold transition-all flex items-center justify-center gap-1.5 shadow-sm">
+                                        <i class="fa-solid fa-volume-high text-softBlue hover:text-white"></i> ฟังเสียงอ่าน
+                                    </button>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Comprehensive Quiz Section (20 Questions) -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-pastelBlue space-y-8">
+                        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 border-b border-gray-100 pb-4">
+                            <div>
+                                <div class="inline-block bg-deepNavy text-white text-xs font-bold px-3 py-1 rounded-full mb-1">
+                                    Assessment Task
+                                </div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-deepNavy flex items-center gap-3">
+                                    <i class="fa-solid fa-pen-to-square text-softBlue"></i> 
+                                    แบบฝึกหัดวัดผลการอ่านเชิงวิจารณ์ (20 ข้อ)
+                                </h3>
+                                <p class="text-xs text-gray-500 mt-1">ครอบคลุม Main Idea, Context Clues, Text Structure, Inference และ Author's Tone</p>
+                            </div>
+
+                            <button onclick="submitQuiz(${art.id})" 
+                                    class="no-print px-6 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-extrabold text-sm rounded-2xl shadow-lg hover:opacity-90 transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> ส่งแบบทดสอบและตรวจคะแนน
+                            </button>
+                        </div>
+
+                        <form id="quiz-form-${art.id}" class="space-y-6">
+                            <div class="grid grid-cols-1 gap-6">
+                                ${art.quiz.map((item, qIdx) => `
+                                    <div class="p-5 rounded-2xl bg-gray-50 border border-gray-200 space-y-3 hover:bg-blue-50/20 transition-all">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-xs font-bold px-2.5 py-1 rounded-md bg-blue-100 text-deepNavy">${item.type}</span>
+                                            <span class="text-xs text-gray-400 font-mono">ข้อที่ ${qIdx + 1}/20</span>
+                                        </div>
+                                        <p class="font-bold text-gray-800 text-base leading-snug">${item.q}</p>
+                                        
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                                            ${item.options.map((opt, oIdx) => `
+                                                <label class="flex items-center gap-3 p-3 rounded-xl bg-white border border-gray-200 hover:border-softBlue cursor-pointer transition-all text-sm">
+                                                    <input type="radio" name="q_${art.id}_${qIdx}" value="${oIdx}" class="w-4 h-4 text-softBlue focus:ring-softBlue">
+                                                    <span class="text-gray-700">${opt}</span>
+                                                </label>
+                                            `).join('')}
+                                        </div>
+
+                                        <!-- Teacher Answer Reveal (Unlocked in Teacher Mode with 198020) -->
+                                        <div class="teacher-answer ${isTeacherMode ? '' : 'hidden'} mt-3 p-3 rounded-xl bg-green-50 border border-green-200 text-xs text-green-800 font-bold">
+                                            <i class="fa-solid fa-circle-check text-green-600"></i> เฉลยครูผู้สอน: ${item.options[item.answer]}
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+
+                            <div class="text-center pt-4 no-print">
+                                <button type="button" onclick="submitQuiz(${art.id})" 
+                                        class="px-8 py-4 bg-gradient-to-r from-deepNavy via-softBlue to-accentBlue text-white font-extrabold text-base rounded-2xl shadow-xl hover:opacity-90 transition-all inline-flex items-center gap-3">
+                                    <i class="fa-solid fa-check-double"></i> ตรวจสอบผลคะแนนบทความนี้ (Submit Test)
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                `;
+                container.innerHTML = html;
+            });
+        }
+
+        // Modal unlocking handlers
+        function openUnlockModal(mode) {
+            unlockTargetMode = mode;
+            const modal = document.getElementById('teacherModal');
+            const title = document.getElementById('modalTitle');
+            const subtitle = document.getElementById('modalSubtitle');
+            
+            if (mode === 'thai') {
+                title.innerText = "ปลดล็อกคำแปลภาษาไทย";
+                subtitle.innerText = "กรุณากรอกรหัสผ่านครูผู้สอนเพื่อแสดงคำแปลใต้แต่ละย่อหน้า";
+            } else {
+                title.innerText = "เข้าสู่โหมดครูผู้สอน (เฉลยแบบฝึกหัด)";
+                subtitle.innerText = "กรุณากรอกรหัสผ่านครูผู้สอนเพื่อแสดงเฉลยแบบฝึกหัด";
+            }
+            
+            document.getElementById('loginError').classList.add('hidden');
+            document.getElementById('passcodeKey').value = '';
+            modal.classList.remove('hidden');
+        }
+
+        function closeUnlockModal() {
+            document.getElementById('teacherModal').classList.add('hidden');
+        }
+
+        function handlePasscodeSubmit(e) {
+            e.preventDefault();
+            const inputKey = document.getElementById('passcodeKey').value;
+            if (inputKey === TEACHER_PASSCODE) {
+                if (unlockTargetMode === 'thai') {
+                    isThaiUnlocked = true;
+                    document.getElementById('unlockThaiBtnText').innerText = "ปลดล็อกคำแปลไทยแล้ว";
+                    document.getElementById('unlockThaiBtn').classList.remove('bg-pink-100', 'text-pink-700');
+                    document.getElementById('unlockThaiBtn').classList.add('bg-green-100', 'text-green-700', 'border-green-300');
+                } else if (unlockTargetMode === 'teacher') {
+                    isTeacherMode = true;
+                    document.getElementById('teacherBtnText').innerText = "โหมดครู (เฉลยปลดล็อกแล้ว)";
+                    document.getElementById('teacherBtn').classList.remove('from-deepNavy', 'to-softBlue');
+                    document.getElementById('teacherBtn').classList.add('from-green-600', 'to-emerald-600');
+                }
+                closeUnlockModal();
+                renderArticles();
+                switchArticle(currentArticleIndex);
+            } else {
+                document.getElementById('loginError').classList.remove('hidden');
+            }
+        }
+
+        // Quiz Submission & Result Processing
+        function submitQuiz(articleId) {
+            const name = document.getElementById('studentName').value.trim();
+            const no = document.getElementById('studentNo').value.trim();
+            const cls = document.getElementById('studentClass').value;
+
+            if (!name || !no || !cls) {
+                alert("กรุณากรอกข้อมูลนักเรียน (ชื่อ, เลขที่, และชั้นเรียน) ให้ครบถ้วนก่อนส่งแบบทดสอบค่ะ");
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                return;
+            }
+
+            const article = articlesData.find(a => a.id === articleId);
+            let score = 0;
+
+            article.quiz.forEach((q, idx) => {
+                const selected = document.querySelector(`input[name="q_${articleId}_${idx}"]:checked`);
+                if (selected && parseInt(selected.value) === q.answer) {
+                    score++;
+                }
+            });
+
+            // Populate Modal
+            document.getElementById('resStudentName').innerText = name;
+            document.getElementById('resStudentNo').innerText = no;
+            document.getElementById('resStudentClass').innerText = cls;
+            document.getElementById('resArticleTitle').innerText = article.title;
+            document.getElementById('resScore').innerText = score;
+
+            let feedback = "พยายามได้ดีมาก! ทบทวนกลยุทธ์การอ่านเพิ่มเติมนะคะ";
+            if (score >= 18) feedback = "ยอดเยี่ยมระดับสูงมาก! มีทักษะการอ่านเชิงวิจารณ์ที่เป็นเลิศ";
+            else if (score >= 14) feedback = "เกณฑ์ดีมาก! เข้าใจโครงสร้างบทความและการจับใจความได้ดี";
+            else if (score >= 10) feedback = "ผ่านเกณฑ์การประเมิน! ควรฝึกฝนคำศัพท์บริบทเพิ่มเติม";
+
+            document.getElementById('resFeedback').innerText = feedback;
+            document.getElementById('resultModal').classList.remove('hidden');
+        }
+
+        function closeResultModal() {
+            document.getElementById('resultModal').classList.add('hidden');
+        }
+
+        // Initialize App on DOM Load
+        window.onload = function() {
+            renderArticles();
+        };
+    </script>
+</body>
+</html>
